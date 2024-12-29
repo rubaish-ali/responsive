@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Karla+Tamil+Upright:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto";
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-contant {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.nav-2 ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-2 ul li {
+    font-size: 16px;
+}
+
+.nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-1 .left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-1 .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right button {
+    background-color: #ffbc0d;
+    border: 0;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.locate-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search-bar a {
+    color: #000;
+    text-decoration: none;
+}
+
+.locate-me a {
+    color: #000;
+    text-decoration: none;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+@media (max-width:465px) {
+    .left {
+        display: none;
+    }
+
+    .nav-2 {
+        display: none;
+    }
+
+    .right {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .locate-me {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 20px;
+        gap: 12px;
+    }
+
+    .navbar img {
+        width: 100px;
+    }
+
+    .fa-bars {
+        display: block !important;
+    }
+}
